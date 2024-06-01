@@ -43,7 +43,6 @@ void setup() async {
   getIt.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(getIt()));
 
   //! External
-
   getIt.registerLazySingletonAsync<SharedPreferences>(
     () => SharedPreferences.getInstance(),
   );
